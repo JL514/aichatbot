@@ -1,0 +1,14 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Adaptive Card Schema",
+  "type": "object",
+  "properties": {
+    "type": { "type": "string", "const": "AdaptiveCard" },
+    "version": { "type": "string" },
+    "body": { "type": "array" },
+    "actions": { "type": "array" },
+    "$schema": { "type": "string" }
+  },
+  "required": ["type", "version", "body"],
+  "additionalProperties": true
+}

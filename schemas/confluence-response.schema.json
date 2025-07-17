@@ -1,0 +1,25 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Confluence Response Schema",
+  "type": "object",
+  "properties": {
+    "results": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "title": { "type": "string" },
+          "url": { "type": "string", "format": "uri" },
+          "excerpt": { "type": "string" },
+          "id": { "type": "string" }
+        },
+        "required": ["title", "url", "excerpt", "id"]
+      }
+    },
+    "start": { "type": "integer" },
+    "limit": { "type": "integer" },
+    "size": { "type": "integer" }
+  },
+  "required": ["results"],
+  "additionalProperties": true
+}
