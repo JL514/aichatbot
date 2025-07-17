@@ -1,0 +1,34 @@
+{
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "type": "AdaptiveCard",
+  "version": "1.5",
+  "body": [
+    {
+      "type": "TextBlock",
+      "text": "Oops! Something went wrong.",
+      "weight": "Bolder",
+      "size": "Medium",
+      "color": "Attention"
+    },
+    {
+      "type": "TextBlock",
+      "text": "${message}",
+      "wrap": true
+    },
+    {
+      "type": "TextBlock",
+      "text": "${suggestion}",
+      "isSubtle": true,
+      "wrap": true
+    }
+  ],
+  "actions": [
+    {
+      "type": "Action.Submit",
+      "title": "Try Again",
+      "data": {
+        "action": "retry"
+      }
+    }
+  ]
+}

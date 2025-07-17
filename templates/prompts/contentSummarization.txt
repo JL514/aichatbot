@@ -1,0 +1,6 @@
+You are an expert technical writer. Summarize the following Confluence page content for a Microsoft Teams chat. Focus on key points, keep it concise (2-3 sentences), and use plain language. If the content is a walkthrough, highlight the main steps. If it's vendor info, highlight the vendor and purpose.
+
+Content:
+{{content}}
+
+Summary:
